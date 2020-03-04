@@ -14,16 +14,16 @@ class AddNumbersType extends AbstractType
     {
         $builder
             ->setMethod('POST')
-            ->add('num1', IntegerType::class, ['label' => 'number1', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num2', IntegerType::class, ['label' => 'number2', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num3', IntegerType::class, ['label' => 'number3', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num4', IntegerType::class, ['label' => 'number4', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num5', IntegerType::class, ['label' => 'number5', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num6', IntegerType::class, ['label' => 'number6', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num7', IntegerType::class, ['label' => 'number7', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num8', IntegerType::class, ['label' => 'number8', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num9', IntegerType::class, ['label' => 'number9', 'attr' => ['min' => 1,'max' => 99999]])
-            ->add('num10', IntegerType::class, ['label' => 'number10', 'attr' => ['min' => 1,'max' => 99999]])
+            ->add('num1', IntegerType::class, ['label' => 'number1', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num2', IntegerType::class, ['label' => 'number2', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num3', IntegerType::class, ['label' => 'number3', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num4', IntegerType::class, ['label' => 'number4', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num5', IntegerType::class, ['label' => 'number5', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num6', IntegerType::class, ['label' => 'number6', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num7', IntegerType::class, ['label' => 'number7', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num8', IntegerType::class, ['label' => 'number8', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num9', IntegerType::class, ['label' => 'number9', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
+            ->add('num10', IntegerType::class, ['label' => 'number10', 'attr' => ['min' => 1,'max' => 99999],'required'=> false])
             ->add('save', SubmitType::class, ['label' => 'Send Numbers']);
     }
     public function configureOptions(OptionsResolver $resolver)

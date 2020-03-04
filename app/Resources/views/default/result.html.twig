@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+    <table>
+        <tr>
+            <strong>INPUT</strong>
+            {% for number in numbers %}
+                <tr> {{ number }}, </tr>
+            {% endfor %}
+        </tr>
+        <br>
+        <tr>
+            <strong>OUTPUT</strong>
+            {% for result in results %}
+                <tr> {{ result }}, </tr>
+            {% endfor %}
+        </tr>
+    </table>
+
+{% endblock %}
