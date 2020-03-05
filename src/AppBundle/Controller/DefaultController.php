@@ -3,7 +3,6 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Form\AddNumbersType;
-use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
@@ -47,10 +46,6 @@ class DefaultController extends Controller
             $result = [];
 
             foreach ($numbers as $n) {
-
-                if ($n == null) {
-                    $result[] = null;
-                }
                 $result[] = Fibonacci($n);
             }
 
